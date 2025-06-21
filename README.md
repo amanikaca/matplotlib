@@ -15,4 +15,4 @@ Features
 ==> Clean grid layout with labeled axes.
 
 📸 Output
-fruitchart (Screenshot.png)
+![fruitchart] (Screenshot.png)
