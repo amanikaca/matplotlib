@@ -28,8 +28,6 @@ plt.ylabel("counts")
 plt.grid(True,linestyle='--',alpha=0.2)
 
 
-
-
 # Show chart
 plt.tight_layout()
 plt.show()
