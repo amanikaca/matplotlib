@@ -10,29 +10,29 @@ uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
 else:
-    df = pd.read_csv("tips.csv")  # Ensure this file is in your GitHub repo
+    df = pd.read_csv("tips.csv") 
 
-# Plotting
+
 fig, axs = plt.subplots(2, 2, figsize=(12, 10))
 fig.suptitle('Tips Dataset Visualizations')
 
-# 1. Histogram
+#  Histogram
 axs[0, 0].hist(df['total_bill'], bins=20, color='skyblue', edgecolor='black')
 axs[0, 0].set_title('Histogram of Total Bill')
 axs[0, 0].set_xlabel('Total Bill')
 axs[0, 0].set_ylabel('Frequency')
 
-# 2. Boxplot
+# Boxplot
 axs[0, 1].boxplot(df['tip'], patch_artist=True, boxprops=dict(facecolor='lightgreen'))
 axs[0, 1].set_title('Boxplot of Tip Amounts')
 axs[0, 1].set_ylabel('Tip')
 
-# 3. Pie Chart
+# Pie Chart
 gender_counts = df['sex'].value_counts()
 axs[1, 0].pie(gender_counts, labels=gender_counts.index, autopct='%1.1f%%', colors=['lightcoral', 'lightblue'])
 axs[1, 0].set_title('Gender Distribution')
 
-# 4. Bar Chart
+# Bar Chart
 avg_total_bill_by_day = df.groupby('day')['total_bill'].mean()
 axs[1, 1].bar(avg_total_bill_by_day.index, avg_total_bill_by_day.values, color='orange')
 axs[1, 1].set_title('Average Total Bill by Day')
