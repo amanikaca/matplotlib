@@ -84,7 +84,7 @@ Try it online:
 ```bash
 streamlit run tips.py
 
-## 4. datacleaning.ipynb – Data Cleaning Walkthrough
+### 4.datacleaning.ipynb – Data Cleaning Walkthrough
 
 This Jupyter notebook demonstrates common data cleaning techniques using **Pandas**. It’s perfect for beginners and intermediate learners who want to understand how to clean, inspect, and prepare datasets for analysis or modeling.
 
