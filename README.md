@@ -83,3 +83,35 @@ Try it online:
 
 ```bash
 streamlit run tips.py
+
+## 4. datacleaning.ipynb – Data Cleaning Walkthrough
+
+This Jupyter notebook demonstrates common data cleaning techniques using **Pandas**. It’s perfect for beginners and intermediate learners who want to understand how to clean, inspect, and prepare datasets for analysis or modeling.
+
+---
+
+### 🔧 What This Notebook Covers
+
+- 🔍 Inspecting missing values using `.isnull()` and `.info()`
+- 🧼 Handling missing data using `fillna()` and `dropna()`
+- 🔢 Converting data types using `.astype()`
+- 🧹 Renaming, dropping, or reordering columns
+- 🔁 Detecting and removing duplicates
+- ✅ Checking and correcting inconsistencies in the dataset
+
+---
+
+### 🧪 Technologies Used
+
+- Python 3.x
+- Pandas
+- Jupyter Notebook
+
+---
+
+### 📁 How to Run
+
+To open the notebook:
+
+```bash
+jupyter notebook datacleaning.ipynb
